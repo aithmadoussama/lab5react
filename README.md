@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+#  TP React Débutant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est un TP d’introduction à **React.js** qui illustre plusieurs concepts fondamentaux du framework à travers des exemples simples et pratiques.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Objectifs pédagogiques
 
-### `npm start`
+Ce TP couvre les notions suivantes :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ✅ Composants React
+- ✅ Gestion de l’état avec `useState`
+- ✅ Formulaires contrôlés et non contrôlés
+- ✅ Lifting State Up
+- ✅ Context API (`useContext`)
+- ✅ Interaction utilisateur
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+##  Structure du projet
+```
+tp-react/
+│── public/
+│ │── index.html
+│
+│── src/
+│ │── App.js
+│ │── index.js
+│ │
+│ │── components/
+│ │ │── FormulaireControle.js
+│ │ │── FormulaireNonControle.js
+│ │ │── TemperatureConvertor.js
+│ │ │── TemperatureInput.js
+│ │ │── Profil.js
+│ │
+│ │── context/
+│ │ │── UtilisateurContext.js
+│ │
+│ │── styles/
+│ │ │── App.css
+│
+│── package.json
+│── README.md
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+## 🧩 Fonctionnalités
 
-### `npm run build`
+### 📝 Formulaire contrôlé
+- Utilise `useState`
+- Champs liés à l’état React
+- Mise à jour en temps réel
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```js
+const [nom, setNom] = useState('');
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Formulaire non contrôlé
+  - Utilise useRef
+  - Accès direct aux valeurs du DOM
+  ```js
+  const nomRef = useRef();
+  ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Context API (Profil utilisateur)
+  - Utilisation de createContext et useContext
+  - Gestion globale des données utilisateur
 
-### `npm run eject`
+  - Fonctionnalités :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    - Affichage du nom
+    - Déconnexion
+### Capture d'ecran 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technologies utilisées
+  - React.js
+  - JavaScript
+  - HTML / CSS
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Auteur
+```
+Ait Hmad Oussama
+```
