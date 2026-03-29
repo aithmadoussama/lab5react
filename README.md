@@ -1,4 +1,4 @@
-#  TP React Débutant
+# TP 5 : Découvrir la gestion de l’état et la structuration des composants React
 
 Ce projet est un TP d’introduction à **React.js** qui illustre plusieurs concepts fondamentaux du framework à travers des exemples simples et pratiques.
 
